@@ -467,6 +467,20 @@ class Audio:
 
         if af.endswith('_1'):
             self.channel_count = 1
+        elif af.endswith('_51'):
+            self.channel_count = 6
+        elif af.endswith('_512'):
+            self.channel_count = 8
+        elif af.endswith('_514'):
+            self.channel_count = 10
+        elif af.endswith('_71'):
+            self.channel_count = 8
+        elif af.endswith('_712'):
+            self.channel_count = 10
+        elif af.endswith('_714'):
+            self.channel_count = 12
+        elif af.endswith('_916'):
+            self.channel_count = 16
         else:
             self.channel_count = 2
 
