@@ -454,10 +454,14 @@ class Audio:
         else:  # default
             self.sample_rate = 44100
 
-        if '_16' in af:
+        if '_16_' in af:
             self.sample_size = 16
-        elif'_24' in af:
+        elif'_20_' in af:
+            self.sample_size = 20
+        elif'_24_' in af:
             self.sample_size = 24
+        elif'_32F_' in af:
+            self.sample_size = 32
         else:  # default
             self.sample_size = 16
 
